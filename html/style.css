@@ -1,0 +1,23 @@
+body {
+    background-color: MistyRose;
+    font-size: 100%;
+}
+main {
+    display: flex;
+}
+h1 {
+    font-size: 1.5em;
+}
+.newBook {
+    width: 20%;
+}
+.mainBlock {
+    display: none;
+    background-color: Fuchsia;
+    grow: 1
+}
+.altBlock {
+    display: block;
+    background-color: White;
+    grow: 1
+}

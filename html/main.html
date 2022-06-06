@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>eBook Analyser</title>
+</head>
+<body>
+  <main>
+    <div class="newBook">
+        <form action>
+            <label for="file_name">Choose eBook:</label>
+            <input type="file" name="file_name" id="file" accept=".ebook, .epub">
+            <input type="submit">
+        </form>
+        <h1>New book</h1>
+    </div>
+    <div class="mainBlock" id="mainBlock">
+        Hello
+    </div>
+    <div class="altBlock" id="altBlock">
+        Goodbye
+    </div>
+  </main>
+  <button onclick="document.getElementById('altBlock').style.display='none';document.getElementById('mainBlock').style.display='block';">Show Main</button>
+  <button onclick="document.getElementById('altBlock').style.display='block';document.getElementById('mainBlock').style.display='none';">Show Alt</button>
+</body>
+</html>
