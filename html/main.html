@@ -8,12 +8,12 @@
 <body>
   <main>
     <div class="newBook">
-        <form action>
-            <label for="file_name">Choose eBook:</label>
-            <input type="file" name="file_name" id="file" accept=".ebook, .epub">
-            <input type="submit">
-        </form>
         <h1>New book</h1>
+        <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
+            <label for="file">Choose eBook:</label>
+            <input type="file" name="file_name" id="file" accept=".ebook, .epub">
+            <input type="submit" value="Process book">
+        </form>
     </div>
     <div class="mainBlock" id="mainBlock">
         Hello
